@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .filterDiv {
+         font-family: Segoe UI;
+         font-size: 16px;
+         font-weight: 400;
+          color: black;
+            width: 300px;      
+          padding-bottom: 20px;
+          text-align: left;
+          margin: 2px;
+          display: none;
+          line-height: 1.5em;
+        }
+        
+        .show {
+          display: block;
+        }
+        
+        .container {
+            display: flex;
+           
+        }
+        
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          padding: 12px 16px;
+          background-color: #152C52;
+          cursor: pointer;
+          font-family: Segoe UI;
+          color: white;
+          border-radius: 15px;
+        }
+        
+        .btn:hover {
+          background-color: #00592D;
+        }
+        
+        .btn.active {
+          background-color: #00592D;
+          color: white;
+        }
+        .inner-column {
+            display: inline-block;
+            margin: 0px 50px;
+        }
+        .name {
+            color: #152C52;
+            font-weight: 700;
+        }
+        #myBtnContainer {
+            margin: 20px 0px;
+            align-items: flex-end;
+            justify-content: end;
+        }
+        </style>
+</head>
+<body>
+
+<!-- Control buttons -->
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('axs')"> Ax-S Thursdays</button>
+            <button class="btn" onclick="filterSelection('eas')"> Expanded Access Summit 3.0</button>
+            
+        </div>
+
+
+        <a href="#Aliu">
+
+
+     
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+ <div class="container">
+        <div class="inner-column">
+                <div class="filterDiv axs"><text class="name">Amy Abernethy, MD, PhD </text>Principal Deputy Commissioner and Acting Chief Information Officer, FDA </div>
+                <div class="filterDiv axs eas"><text class="name">Duke Abernethy, MD, PhD </text>Principal Deputy Commissioner and Acting Chief Information Officer, FDA </div>
+                <div class="filterDiv axs"><text class="name">Chris Austin, MD</text> Director, National Center for Advancing Translational Sciences, NIH</div>
+                <div class="filterDiv eas"><text class="name">Georges van Baelen, MScPh</text> Founder and President of Arctiryon, Inc.</div>
+                <div class="filterDiv eas"><text class="name">Behtash Bahador, MSc</text> Associate Director, Center for Information and Study on Clinical Research Participation (CISCRP)</div>
+                <div class="filterDiv eas"><text class="name">Amy Barone, MD</text> Medical Officer, Oncology Center of Excellence, FDA</div>
+                <div class="filterDiv eas"><text class="name">Naomi Lopez Bauman</text> Director of Healthcare Policy, Goldwater Institute</div>
+                <div class="filterDiv eas"><text class="name">Chris Beardmore</text> CEO, Anova LLC</div>
+                <div class="filterDiv eas"><text class="name">Stuart Bell, PhD</text> Vice President, Consulting, Inceptua Medicines Access</div>
+                <div class="filterDiv eas"><text class="name">Amar Bhat, PhD</text> Interim Executive Director, Reagan-Udall Foundation, FDA</div>
+                <div class="filterDiv eas"><text class="name">Marc Boutin</text> Chief Executive Officer, National Health Council</div>
+                <div class="filterDiv axs eas"><text class="name">Suanna Bruinooge, MPH</text> Director of Research Strategy, CENTRA, ASCO</div>
+                <div class="filterDiv eas"><text class="name">Connie Coulomb, MBA</text> Managing Partner, Coulomb Strategy Consulting LLC</div>
+                <div class="filterDiv eas"><text class="name">Anne Cropp, PharmD</text> Chief Scientific Officer, Early Access Care, LLC</div>
+                <div class="filterDiv eas"><text class="name">Jonathan Darrow, S.J.D.</text> Faculty Member, Harvard Medical School </div>
+                <div class="filterDiv eas"><text class="name">Khrystal K. Davis</text> Founder & President of Texas Rare Alliance, Texas Newborn Screening Advisory Committee</div>
+                <div class="filterDiv eas"><text class="name">David Farber, JD</text> Senior Partner, King & Spalding</div>
+                
+
+
+        </div>
+
+        <div class="inner-column">
+            <div class="filterDiv eas"><text class="name">William Hoos, MBA, MS</text> Chief Commercial Officer, xCures</div>
+            <div class="filterDiv eas"><text class="name">Peter Barton Hutt, JD</text> Senior Counsel, Covington & Burling LLP</div>
+            <div class="filterDiv axs eas"><text class="name">Michael Joyner, MD</text> Faculty Member, Mayo Clinic</div>
+            <div class="filterDiv eas"><text class="name">Richard Klein</text> Former Director, Patient Liaison Program, FDA</div>
+            <div class="filterDiv axs eas"><text class="name">Michael Kurilla, MD, PhD</text> Director, Clinical and Translational Science Awards (CTSA) Program, NCATS, NIH</div>
+            <div class="filterDiv eas"><text class="name">John Lagus</text> Managing Director of Business Development, Tanner Pharma Group</div>
+            <div class="filterDiv axs eas"><text class="name">Jeff Leider</text> President, X2, “Let Them Be Little” Foundation</div>
+            <div class="filterDiv axs eas"><text class="name">Craig Lipset</text> Founder, Clinical Innovation Partners</div>
+            <div class="filterDiv axs eas"><text class="name">Peter Marks, MD, PhD</text> Director, Center for Biologics Evaluation and Research, FDA</div>
+            <div class="filterDiv eas"><text class="name">Hilary Marston, MD, MPH</text> Medical Officer, National Institute of Allergy and Infectious Diseases (NIAID), NIH</div>
+            <div class="filterDiv eas"><text class="name">Alexander Natz</text> Secretary General, European Confederation of Pharmaceutical Entrepreneurs (EUCOPE)</div>
+            <div class="filterDiv axs eas"><text class="name">Edmund Pezalla, MD, MPH</text> Former National Medical Director and VP, Aetna (2007 – 2016); CEO of Enlightenment BioConsult</div>
+            <div class="filterDiv eas"><text class="name">Peter Pitts</text> President, Center for Medicine in the Public Interest</div>
+            <div class="filterDiv axs eas"><text class="name">Tobias Polak, MSc</text> Department of Health Technology Assessment, Erasmus MC</div>
+            <div class="filterDiv eas"><text class="name">Anthony Fauci, MD</text> Director, National Institute of Allergy and Infectious Diseases (NIAID) 1984-Present</div>
+            <div class="filterDiv eas"><text class="name">Karen Frascello</text> Director, Global Medical Affairs, Early Access Programs, Alnylam Pharmaceuticals </div>
+            <div class="filterDiv eas"><text class="name">Pat Furlong</text> Founding President and CEO, Parent Project Muscular Dystrophy (PPMD)</div>
+            <div class="filterDiv eas"><text class="name">Christina Hartman, MPH</text> Senior Director of Advocacy, The Assistance Fund</div>
+            
+
+        </div>
+        <div class="inner-column">
+            <div class="filterDiv axs eas"><text class="name">Jess Rabourn, CFA</text> Executive Producer, Expanded Access Summit | CEO, WideTrial, Inc. </div>
+            <div class="filterDiv eas"><text class="name">David Schwicker</text> Principal and Founder, ORPHA Strategy Consulting</div>
+            <div class="filterDiv axs eas"><text class="name">Erika Segear, PhD, RAC</text> Associate Director of Regulatory Affairs, Duke University School of Medicine</div>
+            <div class="filterDiv axs eas"><text class="name">Andrew Shuman, MD, FACS</text> Chief of Clinical Ethics Services, University of Michigan Medical School</div>
+            <div class="filterDiv eas"><text class="name">Marjorie Speers, PhD</text> Executive Director, Clinical Research Pathway</div>
+            <div class="filterDiv eas"><text class="name">Douglas Sproule, MD</text> Vice President, Spinal Muscular Atrophy Therapeutic Area Head, AveXis</div>
+            <div class="filterDiv axs eas"><text class="name">Steve Usdin</text> Senior Editor, BioCentury</div>
+            <div class="filterDiv eas"><text class="name">Robert Walker, MD</text> Director, Division of Clinical Development, Biomedical Advanced Research and Development Authority (BARDA), HHS</div>
+            <div class="filterDiv axs eas"><text class="name">Kevin Weatherwax</text> Managing Director, Michigan Institute for Clinical and Health Research, University of Michigan Health System</div>
+            <div class="filterDiv eas"><text class="name">Janet Woodcock, MD</text> Director, Center for Drug Evaluation and Research (CDER), FDA </div>
+            <div class="filterDiv eas">(In Memory)<text class="name"> Frank Young, MD, PhD</text> Former FDA Commissioner (1984-1989) </div>
+            
+        </div>
+
+   
+  </div>
+
+
+ 
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container">
+    <div class="inner-column">
+            <div  class="filterDiv axs"><a href="#Abernethy"><text class="name">Amy Abernethy, MD, PhD </text>Principal Deputy Commissioner and Acting Chief Information Officer, FDA</a> </div>
+            <div class="filterDiv axs eas"><a href="#Aliu"><text class="name">Paul Aliu, PharmD </text>Principal Deputy Commissioner and Acting Chief Information Officer, FDA </a> </div>
+            <div  class="filterDiv axs"><a href="#Austin"><text class="name">Chris Austin, MD</text> Director, National Center for Advancing Translational Sciences, NIH</a> </div>
+            <div  class="filterDiv eas"><a href="#Baelen"><text class="name">Georges van Baelen, MScPh</text> Founder and President of Arctiryon, Inc.</a> </div>
+            <div  class="filterDiv eas"><a href="#Bahador"><text class="name">Behtash Bahador, MSc</text> Associate Director, Center for Information and Study on Clinical Research Participation (CISCRP)</div>
+            <div  class="filterDiv eas"><a href="#Barone"><text class="name">Amy Barone, MD</text> Medical Officer, Oncology Center of Excellence, FDA</a> </div>
+            <div class="filterDiv eas"><a href="#Bauman"><text class="name">Naomi Lopez Bauman</text> Director of Healthcare Policy, Goldwater Institute</a> </div>
+            <div  class="filterDiv eas"><a href="#Beardmore"><text class="name">Chris Beardmore</text> CEO, Anova LLC</a> </div>
+            <div class="filterDiv eas"><a href="#Bell"><text class="name">Stuart Bell, PhD</text> Vice President, Consulting, Inceptua Medicines Access</a> </div>
+            <div class="filterDiv eas"><a href="#Bhat"><text class="name">Amar Bhat, PhD</text> Interim Executive Director, Reagan-Udall Foundation, FDA</a> </div>
+            <div  class="filterDiv eas"><a href="#Boutin"><text class="name">Marc Boutin</text> Chief Executive Officer, National Health Council</a> </div>
+            <div  class="filterDiv axs eas"><a href="#Bruinooge"><text class="name">Suanna Bruinooge, MPH</text> Director of Research Strategy, CENTRA, ASCO</a> </div>
+            <div  class="filterDiv eas"><a href="#Coulomb"><text class="name">Connie Coulomb, MBA</text> Managing Partner, Coulomb Strategy Consulting LLC</a> </div>
+            <div  class="filterDiv eas"><a href="#Cropp"><text class="name">Anne Cropp, PharmD</text> Chief Scientific Officer, Early Access Care, LLC</a> </div>
+            <div  class="filterDiv eas"><a href="#Darrow"><text class="name">Jonathan Darrow, S.J.D.</text> Faculty Member, Harvard Medical School </a> </div>
+            <div  class="filterDiv eas"><a href="#Davis"><text class="name">Khrystal K. Davis</text> Founder & President of Texas Rare Alliance, Texas Newborn Screening Advisory Committee </a> </div>
+            <div  class="filterDiv eas"><a href="#Farber"><text class="name">David Farber, JD</text> Senior Partner, King & Spalding</a> </div>
+            
+
+
+    </div>
+
+    <div class="inner-column">
+        <div id="Hoos" class="filterDiv eas"><a href="#Hoos"><text class="name">William Hoos, MBA, MS</text> Chief Commercial Officer, xCures </a> </div>
+        <div id="Hutt" class="filterDiv eas"><a href="#Hutt"><text class="name">Peter Barton Hutt, JD</text> Senior Counsel, Covington & Burling LLP</a> </div>
+        <div id="Joyner"  class="filterDiv axs eas"><a href="#Joyner"><text class="name">Michael Joyner, MD</text> Faculty Member, Mayo Clinic</a> </div>
+        <div id="Klein" class="filterDiv eas"><a href="#Klein"><text class="name">Richard Klein</text> Former Director, Patient Liaison Program, FDA</a> </div>
+        <div id="Kurilla" class="filterDiv axs eas"><a href="#Kurilla"><text class="name">Michael Kurilla, MD, PhD</text> Director, Clinical and Translational Science Awards (CTSA) Program, NCATS, NIH</a> </div>
+        <div id="Lagus" class="filterDiv eas"><a href="#Lagus"><text class="name">John Lagus</text> Managing Director of Business Development, Tanner Pharma Group</a> </div>
+        <div id="Leider"  class="filterDiv axs eas"><a href="#Leider"><text class="name">Jeff Leider</text> President, X2, “Let Them Be Little” Foundation</a> </div>
+        <div id="Lipset" class="filterDiv axs eas"><a href="#Lipset"><text class="name">Craig Lipset</text> Founder, Clinical Innovation Partners</a> </div>
+        <div id="Marks" class="filterDiv axs eas"><a href="#Marks"><text class="name">Peter Marks, MD, PhD</text> Director, Center for Biologics Evaluation and Research, FDA</a> </div>
+        <div  id="Marston" class="filterDiv eas"><a href="#Marston"><text class="name">Hilary Marston, MD, MPH</text> Medical Officer, National Institute of Allergy and Infectious Diseases (NIAID), NIH</a> </div>
+        <div id="Natz" class="filterDiv eas"><a href="#Natz"><text class="name">Alexander Natz</text> Secretary General, European Confederation of Pharmaceutical Entrepreneurs (EUCOPE)</a> </div>
+        <div id="Pezalla" class="filterDiv axs eas"><a href="#Pezalla"><text class="name">Edmund Pezalla, MD, MPH</text> Former National Medical Director and VP, Aetna (2007 – 2016); CEO of Enlightenment BioConsult</a> </div>
+        <div id="Pitts" class="filterDiv eas"><a href="#Pitts"><text class="name">Peter Pitts</text> President, Center for Medicine in the Public Interest</a> </div>
+        <div id="Polak" class="filterDiv axs eas"><a href="#Polak"><text class="name">Tobias Polak, MSc</text> Department of Health Technology Assessment, Erasmus MC</a> </div>
+        <div id="Fauci" class="filterDiv eas"><a href="#Fauci"><text class="name">Anthony Fauci, MD</text> Director, National Institute of Allergy and Infectious Diseases (NIAID) 1984-Present</a> </div>
+        <div id="Frascello" class="filterDiv eas"><a href="#Frascello"><text class="name">Karen Frascello</text> Director, Global Medical Affairs, Early Access Programs, Alnylam Pharmaceuticals </a> </div>
+       
+      
+        
+
+    </div>
+    <div class="inner-column">
+         <div id="Furlong" class="filterDiv eas"><a href="#Furlong"><text class="name">Pat Furlong</text> Founding President and CEO, Parent Project Muscular Dystrophy (PPMD)</a> </div>
+        <div id="Hartman" class="filterDiv eas"><a href="#Hartman"><text class="name">Christina Hartman, MPH</text> Senior Director of Advocacy, The Assistance Fund</a> </div>
+        <div id="Rabourn" class="filterDiv axs eas"><a href="#Rabourn"><text class="name">Jess Rabourn, CFA</text> Executive Producer, Expanded Access Summit | CEO, WideTrial, Inc. </a> </div>
+        <div id="Schwicker" class="filterDiv eas"><a href="#Schwicker"><text class="name">David Schwicker</text> Principal and Founder, ORPHA Strategy Consulting</a> </div>
+        <div id="Segear" class="filterDiv axs eas"><a href="#Segear"><text class="name">Erika Segear, PhD, RAC</text> Associate Director of Regulatory Affairs, Duke University School of Medicine</a> </div>
+        <div id="Shuman" class="filterDiv axs eas"><a href="#Shuman"><text class="name">Andrew Shuman, MD, FACS</text> Chief of Clinical Ethics Services, University of Michigan Medical School</a> </div>
+        <div id="Speers" class="filterDiv eas"><a href="#Speers"><text class="name">Marjorie Speers, PhD</text> Executive Director, Clinical Research Pathway</a> </div>
+        <div id="Sproule" class="filterDiv eas"><a href="#Sproule"><text class="name">Douglas Sproule, MD</text> Vice President, Spinal Muscular Atrophy Therapeutic Area Head, AveXis</a> </div>
+        <div id="Usdin" class="filterDiv axs eas"><a href="#Usdin"><text class="name">Steve Usdin</text> Senior Editor, BioCentury</a> </div>
+        <div id="Walker" class="filterDiv eas"><a href="#Walker"><text class="name">Robert Walker, MD</text> Director, Division of Clinical Development, Biomedical Advanced Research and Development Authority (BARDA), HHS</a> </div>
+        <div id="Weatherwax" class="filterDiv axs eas"><a href="#Weatherwax"><text class="name">Kevin Weatherwax</text> Managing Director, Michigan Institute for Clinical and Health Research, University of Michigan Health System</a> </div>
+        <div id="Woodcock" class="filterDiv eas"><a href="#Woodcock"><text class="name">Janet Woodcock, MD</text> Director, Center for Drug Evaluation and Research (CDER), FDA </a> </div>
+        <div id="Young" class="filterDiv eas"><a href="#Young">(In Memory)<text class="name"> Frank Young, MD, PhD</text> Former FDA Commissioner (1984-1989) </a> </div>
+        
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+
+
+    filterSelection("all")
+function filterSelection(c) {
+var x, i;
+x = document.getElementsByClassName("filterDiv");
+if (c == "all") c = "";
+// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+for (i = 0; i < x.length; i++) {
+  w3RemoveClass(x[i], "show");
+  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+}
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  if (arr1.indexOf(arr2[i]) == -1) {
+    element.className += " " + arr2[i];
+  }
+}
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  while (arr1.indexOf(arr2[i]) > -1) {
+    arr1.splice(arr1.indexOf(arr2[i]), 1);
+  }
+}
+element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+});
+}
+
+</script>
+
+
+    
+</body>
+
+</html>
+
+
+
+
+
+
+ 
+ 
